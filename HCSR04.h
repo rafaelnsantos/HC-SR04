@@ -1,7 +1,7 @@
 // HC-SR04.h
 
-#ifndef _HC-SR04_h
-#define _HC-SR04_h
+#ifndef _HCSR04_h
+#define _HCSR04_h
 
 #include "Arduino.h"
 

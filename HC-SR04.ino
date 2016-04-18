@@ -1,6 +1,9 @@
-//Example, acessing the distance using getDistance();
+//Example usage code
+
 #include "HCSR04.h"
+
 HCSR04 sensor(10,11); //trigPin, echoPin
+
 void setup()
 {
 	sensor.begin();
