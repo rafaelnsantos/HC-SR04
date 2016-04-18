@@ -29,10 +29,10 @@ void HCSR04::update(){
 	distanceIN = duration / 2 / 70.1633;
 }
 
-long HCSR04::getDistanceCM(){
+float HCSR04::getDistanceCM(){
 	return distanceCM;
 }
 
-long HCSR04::getDistanceIN(){
+float HCSR04::getDistanceIN(){
 	return distanceIN;
 }
