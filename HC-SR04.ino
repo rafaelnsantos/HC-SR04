@@ -10,6 +10,6 @@ void loop()
 {
 	sensor.update();
 
-
-	sensor.getDistance(); //returns a long with distance in CM
+	float distanceCM = sensor.getDistanceCM();
+	float distanceIN = sensor.getDistanceIN();
 }
