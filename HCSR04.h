@@ -17,8 +17,8 @@ public:
 	HCSR04(int trPin, int ecPin);
 	void begin();
 	void update();
-	long getDistanceCM();
-	long getDistanceIN();
+	float getDistanceCM();
+	float getDistanceIN();
 };
 
 #endif
