@@ -10,13 +10,15 @@ class HCSR04
 protected:
 	int trigPin;
 	int echoPin;
-	long distance;
+	float distanceCM;
+	float distanceIN;
 public:
 	HCSR04();
 	HCSR04(int trPin, int ecPin);
 	void begin();
 	void update();
-	long getDistance();
+	long getDistanceCM();
+	long getDistanceIN();
 };
 
 #endif

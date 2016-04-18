@@ -22,9 +22,17 @@ void HCSR04::update(){
 	digitalWrite(trigPin, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(trigPin, LOW);
-	distance = (pulseIn(echoPin, HIGH) / 2) / 29.1;
+	long duration = pulseIn(echoPin, HIGH);
+	//duration / 2 / 29
+	distanceCM = duration / 2 / 27.6233;
+	//duration / 2 / 74
+	distanceIN = duration / 2 / 70.1633;
 }
 
-long HCSR04::getDistance(){
-	return distance;
+long HCSR04::getDistanceCM(){
+	return distanceCM;
+}
+
+long HCSR04::getDistanceIN(){
+	return distanceIN;
 }
